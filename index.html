@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOSCE enrichment and support team</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script type="text/javasript" src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://maps.google.com/maps/api/js"></script>
+    <script>
+      // Regular map
+      function regular_map() {
+        var var_location = new google.maps.LatLng(40.725118, -73.997699);
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 14
+        };
+    
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+          var_mapoptions);
+    
+        var var_marker = new google.maps.Marker({
+          position: var_location,
+          map: var_map,
+          title: "New York"
+        });
+      }
+    // Initialize maps
+      google.maps.event.addDomListener(window, 'load', regular_map);
+    </script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <style>
+     .fa {
+       padding: 20px;
+       font-size: 30px;
+       width: 50px;
+       text-align: center;
+       text-decoration: none;
+       margin: 5px 2px;
+     }
+     .icon{
+       border-radius: 20px;
+      }
+     .carousel-inner img {
+       width: 100%;
+       height: 100%;
+      }
+     </style>
+  </head>
+<body>
+<!------------------------header-------------------------------------------------->
+    <header>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+        <!------brand------>
+        <img class="icon" src="images/nosce.jpg" alt="logo" width="60px" height="60px" loading="lazy">
+        <!-----togler------->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link " href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallary</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Contact us
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                </svg>
+                9497279610</a><br>
+                <a class="dropdown-item" href="#">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                </svg>
+                8301886754</a><br>
+                <a class="dropdown-item" href="#">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+                </svg>
+                8456929573</a><br>
+                <a class="dropdown-item" href="#">
+                  <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                  </svg>
+                  nosceenrichment18@gmail.com</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <img src="images/groupdiscuss.jpg" alt="header image" width="100%">
+      
+    </header>
+<!--------------------------main-------------------------------------------->
+    <main>
+      <div class="container container-sm p-4 my-3 bg-dark text-white " >
+        <!--cots-->
+        <h3 align=center> Knowing yourself is the beginning of all wisdom</h3>
+        <h3 align=center><b>[Aristotle]</b></h3>
+      </div>
+      <div class="container-fluid">
+  <!-------------main row---------------------->
+        <div class="row">
+          <div class="col-md-8 col-sm-4">
+            <h2 align=center>WELCOME TO NOSCE</h2>
+              <p style=" text-align: justify;">
+                To be successful in this increasingly competitive world,
+               one should be well aware about oneself. Self awareness is all about
+                knowing your emotions, personal strengths & weaknesses 
+                and having a sense of self worth.
+              </p>
+              <p style=" text-align: justify;">
+                NOSCE is a Personal Enrichment & Support Team.
+                 We have a team of self motivated and professionally qualified members to
+                  support you in your pursuit of knowing yourself. 
+                  We ought to nourish your talents and build your 
+                  confidence so that you can face the day today challenges successfully.
+              </p>
+              <p style=" text-align: justify;">
+                We offer campus based soft skill and placement orientation to graduate 
+                and post graduate students. Ongoing placement assistance and technical aptitude 
+                training would be an added advantage. Also, we work with corporates & provide 
+                customized training to employees based on their projected needs. We are blessed 
+                with a wide range of satisfied customers, both from educational and corporate 
+                sectors whose feedback and support drives us forward.
+              </p>
+              <p style=" text-align: justify;">
+                Hoping to serve you more & better.
+              </p>
+              <p>
+                <b>TEAM NOSCE</b>
+              </p>
+          </div>
+          <div class="col-md-4 col-sm-8">
+            <img class="container-fluid bg-dark" src="images/hands1.jpg">
+          </div>
+        </div>
+  <!----------------main row-------------------------->
+  <!-----------------enquiry box----------------------->
+        <div class="row">
+          <div style="border-radius: 20px;" class="container p-3 my-3 border col-md-4 col-sm-8 bg-dark text-white">
+            <h3 align=center><b>ENQUIRY</b></h3>
+              <div align=center>
+          <!---------------------user name------------------->
+                <input type="text" class="form-control" id="uname" placeholder="your name"><br>
+          <!---------------------email------------------------>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Email"><br>
+          <!---------------------phone number-------------------->
+                <input type="number" class="form-control" placeholder="phone"><br>
+          <!----------------------message------------------------>
+                <textarea name="message" class="form-control" id="message" placeholder="Message"></textarea><br>
+          <!-----------------------submit btton------------------->                
+                <button type="button" id="submit" class="btn btn-outline-success form-control">submit</button>
+              </div>
+          </div>
+          <div class="container-fluid bg-dark text-white col-md-8 col-sm-4">
+           <br><br><h3 align=center><b>NEWS & EVENTS</b></h3>
+           <br><div class="row">
+              <!-------- col 1--------->
+              <div class="container col-sm-6 ">
+                <img ; src="images/groupdiscuss.jpg" alt="gd" width="100%">
+                <p align=center><b>Amet consectetur adipiscing elitlorem</b></p>
+              </div>
+              <!---------col 2---------->
+              <div class="container col-sm-6 ">
+                <img src="images/groupdiscuss.jpg" alt="gd" width="100%">
+                <p align=center><b>Lorem ipsum dolor sit amet consectetur adipiscing elit</b></p>
+              </div>
+            </div>
+          </div>
+        </div><br>
+  <!-----------------main row---------------------->
+        <div class="row">
+          <div class="container-fluid pt-3 bg-dark text-white">
+          <h3 align=center><b>TESTIMONIALS</b></h3>
+          <p style="text-align:center;">
+            Bhavan’s College Of Arts and Commerce, Kakkanad via 
+            their Women’s cell conducted a session in stress and relationship management
+             on 17th July, 2019. The session presided by Ms. Besi Paul,
+              Chief Mentor and CEO of Nosce, was rich in knowledge about the 
+              dilemmas and relationship pressures the current adolescent generation is facing. 
+              It addressed the various issues in the society detrimental to the women in 
+              general and solutions for the same given. It had been an enlightening 
+              session coupled with fun anecdotes helping to nurture a positive attitude 
+              in the minds of students and look at things from a wider angle.
+          </p>
+          <p align=center>Thank you NOSCE team for this wonderful session.</p>
+          <p align=center><b>Women Cell – Bavans Arts & Commerce, College</b></p>
+          </div>
+        </div>
+<!-------------main row---------------------------------->
+        <div class="row">
+          <div class="container-fluid">
+            <h3 align=center><b>WE BRING SOMETHING SPECIAL</b></h3>
+            <div class="row">
+              <div class="container col-sm-4 border">
+                <img src="images/groupdiscuss.jpg" alt="gp" width="100%">
+                <p align=center><b>DIGITAL MARKETING</b></p>
+              </div>
+              <div class="container col-sm-4 border">
+                <img src="images/groupdiscuss.jpg" alt="gp" width="100%">
+                <p align=center><b>CAMPUS RECRUITMENT TRAINING</b></p>
+              </div>
+              <div class="container col-sm-4 border">
+                <img src="images/groupdiscuss.jpg" alt="gp" width="100%">
+                <p align=center><b>CORPORATE TRAINING</b></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="container col-sm-4 border">
+                <img src="images/groupdiscuss.jpg" alt="gp" width="100%">
+                <p align=center><b>MANAGEMENT SKILL TRAINING</b></p>
+              </div>
+              <div class="container col-sm-4 border">
+                <img src="images/groupdiscuss.jpg" alt="gp" width="100%">
+                <p align=center><b>RESERCH &COUNSELLING</b></p>
+              </div>
+              <div class="container col-sm-4 border">
+                <img src="images/groupdiscuss.jpg" alt="gp" width="100%">
+                <p align=center><b>FINISHING SCHOOL</b></p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="container col-sm-4 border">
+                <img src="images/groupdiscuss.jpg" alt="gp" width="100%">
+                <p align=center><b>OET TRAINING</b></p>
+              </div>
+            </div>
+          </div>    
+        </div>
+<!-------------main row----------------------->
+        <div class="row">
+          <div class="container bg-dark">
+            <div class="row">
+              <div class="col-md-10 col-sm-2">
+                <div class="row">
+                  <div class="col-md-9 col-sm-3 text-white ">
+                    <br><h3><b>Ready to make NOSCE work for you?</b></h3>
+                    <p>Have questions? Check out our FAQ or get in touch.</p>
+                  </div>
+                  <div align=center class="col-md-3 col-sm-9">
+                    <br><button type="button" class="btn btn-outline-success bg-white text-dark">
+                      GET STARTED
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-2 col-sm-10 text-white">
+                <button type="button" class="btn  btn-outline-success text-white btn-block">
+                  <p>GET OUR DIGITAL BUSINESS CARD</p>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div><br>
+  <!-----------main row-------------------->
+  <!-------our client---------->
+        <div class="row">
+          <div class="container-fluid jumbotron">
+            <h3 align=center><b>OUR CLIENTS</b></h3>
+            <div class="row">
+              <div class="col-sm-3 boarder">
+                <img src="images/client 2.jpg" alt="2" width="100%">
+              </div>
+              <div class="col-sm-3 boarder">
+                <img src="images/client1.jpg" alt="1" width="100%">
+              </div>
+              <div class="col-sm-3 boarder">
+                <img src="images/client 2.jpg" alt="2" width="100%">
+              </div>
+              <div class="col-sm-3 boarder">
+                <img src="images/client1.jpg" alt="1" width="100%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+<!-------------------------footer---------------------------------->
+    <footer>
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-4  border">
+              <h3>Location</h3>
+              <div class="container-fluid">
+                <!--Google map-->
+                <div id="map-container" class="z-depth-1-half map-container" style="height: 300px; width: 300px;">
+                <iframe src="https://www.google.com/maps/dir/10.0382626,76.5110664/9.9808205,76.3008728/@9.9944281,76.2659202,11z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0" frameborder="0"
+                style="border:0" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 border">
+              <h3>Quick Links</h3>
+              <p>
+                Home<br>
+                About<br>
+                Blog<br>
+                Portfolio<br>
+                Services<br>
+                Gallery<br>
+                Contact Us<br>
+              </p>
+            </div>
+            <div class="col-sm-4 border">
+             <h3>Contact</h3> 
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+              </svg>
+              9497279610<br>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+              </svg>
+              8301886754<br>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/>
+              </svg>
+              8456929573<br>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                </svg>
+                nosceenrichment18@gmail.com<br>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-globe" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4H2.255a7.025 7.025 0 0 1 3.072-2.472 6.7 6.7 0 0 0-.597.933c-.247.464-.462.98-.64 1.539zm-.582 3.5h-2.49c.062-.89.291-1.733.656-2.5H3.82a13.652 13.652 0 0 0-.312 2.5zM4.847 5H7.5v2.5H4.51A12.5 12.5 0 0 1 4.846 5zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5H7.5V11H4.847a12.5 12.5 0 0 1-.338-2.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12H7.5v2.923c-.67-.204-1.335-.82-1.887-1.855A7.97 7.97 0 0 1 5.145 12zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11H1.674a6.958 6.958 0 0 1-.656-2.5h2.49c.03.877.138 1.718.312 2.5zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12h2.355a7.967 7.967 0 0 1-.468 1.068c-.552 1.035-1.218 1.65-1.887 1.855V12zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5h-2.49A13.65 13.65 0 0 0 12.18 5h2.146c.365.767.594 1.61.656 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4H8.5V1.077c.67.204 1.335.82 1.887 1.855.173.324.33.682.468 1.068z"/>
+              </svg>
+              nosce.in<br>
+              <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+              </svg>
+              Keerikkattil Building, Kumarapuram P.O,
+                    Ernakulam. 683565
+            </div>
+          </div>
+          <div class="container-fluid border" align=center>
+            <a href="https://www.facebook.com/nosceenrichment" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="https://api.whatsapp.com/send?phone=919497279610&fbclid=IwAR3sqLIf9CQKme2BKLqIaFznWyVEER8ek1rhhwKx1LksXa5GQlzJcODWsL8" class="fa fa-whatsapp"></a>
+          </div>
+        </div>
+    </footer> 
+</body>
+</html>
